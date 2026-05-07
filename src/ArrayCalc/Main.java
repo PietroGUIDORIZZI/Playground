@@ -3,6 +3,7 @@ package ArrayCalc;
 
 import static ArrayCalc.BubbleSort.bubbleSort;
 import static ArrayCalc.BuscaLinear.buscaLinear;
+import static ArrayCalc.InverterArray.inverterArray;
 import static ArrayCalc.MaiorNumero.encontreOMaior;
 import static ArrayCalc.Media.media;
 import static ArrayCalc.MenorNumero.encontreOMenor;
@@ -42,5 +43,10 @@ public class Main {
         }
 
         System.out.printf("A média do array é %.2f\n", media(arrayAleatorio));
+
+        int[] arrayInvertido = inverterArray(arrayAleatorio);
+        System.out.println();
+        Mostrar(arrayInvertido);
+        System.out.println();
     }
 }
