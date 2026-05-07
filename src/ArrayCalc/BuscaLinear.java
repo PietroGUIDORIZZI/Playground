@@ -6,7 +6,7 @@ public class BuscaLinear {
         int pos = -1;
         for (int i = 0; i < array.length; i++) {
             if(target == array[i]){
-                pos = i;
+                return i;
             }
         }
         return pos;
